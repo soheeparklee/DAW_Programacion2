@@ -1,4 +1,30 @@
-esto
-es
-un 
-fichero de texto
+PrintWriter numero: 1
+PrintWriter numero: 2
+PrintWriter numero: 3
+PrintWriter numero: 4
+PrintWriter numero: 5
+PrintWriter numero: 6
+PrintWriter numero: 7
+PrintWriter numero: 8
+PrintWriter numero: 9
+PrintWriter numero: 10
+Fila numero: 1
+Fila numero: 2
+Fila numero: 3
+Fila numero: 4
+Fila numero: 5
+Fila numero: 6
+Fila numero: 7
+Fila numero: 8
+Fila numero: 9
+Fila numero: 10
+PrintWriter numero: 1
+PrintWriter numero: 2
+PrintWriter numero: 3
+PrintWriter numero: 4
+PrintWriter numero: 5
+PrintWriter numero: 6
+PrintWriter numero: 7
+PrintWriter numero: 8
+PrintWriter numero: 9
+PrintWriter numero: 10

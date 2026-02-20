@@ -22,14 +22,14 @@ public class FichTextoBufEscribir {
 		//EJEMPLO CON PrintWriter
 		PrintWriter fichero;
 		try {
-			fichero = new PrintWriter(new FileWriter("FichTexto.txt"));
+			fichero = new PrintWriter(new FileWriter("FichTexto.txt", true));
 			for(int i=1; i<11; i++)
-				fichero.println("Fila numero: "+i);	  		
-				fichero.close();				
+				fichero.println("PrintWriter numero: "+i);
+				fichero.close();
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
-		}      
+		}
 
 
 		
