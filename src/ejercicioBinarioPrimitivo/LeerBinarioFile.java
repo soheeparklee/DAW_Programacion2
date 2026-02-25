@@ -1,4 +1,4 @@
-package ejercicioBinario;
+package ejercicioBinarioPrimitivo;
 
 import java.io.*;
 
@@ -22,8 +22,8 @@ public class LeerBinarioFile {
                 System.out.printf("This animal %s has %d legs and is %f tall. It is %b that I have this animal in my house.\n", n, e, d, b);
 
             }
-        } catch (IOException ex) {
-
+        } catch (EOFException ex) {
+            System.out.println("Fichero finalizado");
         }
 
         dataIS.close();

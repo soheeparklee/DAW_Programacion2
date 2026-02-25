@@ -5,13 +5,20 @@ import java.io.*;
 public class EscribirPersonas {
 	public static void main(String[] args) throws IOException {
 	
-		File fichero = new File("FichPersonas.dat");// declara el fichero
+		File fichero = new File("FichPersonas.obj");// declara el fichero
 
 		//crea el flujo de salida
-		FileOutputStream fileout = new FileOutputStream(fichero); 
+		FileOutputStream fileout;
+        ObjectOutputStream dataOS;
+        if(!fichero.exists()){
+            fileout = new FileOutputStream(fichero);
+            dataOS = new ObjectOutputStream(fileout);
+        }else{
+            fileout = new FileOutputStream(fichero, true);
+            dataOS = new MiObjectOutputStream(fileout);
+        }
 		
 		// conecta el flujo de bytes al flujo de datos
-		ObjectOutputStream dataOS = new ObjectOutputStream(fileout);
 
 		String nombres[] = { "Ana", "Luis Miguel", "Alicia", "Pedro", 
 				             "Manuel", "Andrés", "Julio", "Antonio",

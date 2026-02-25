@@ -22,12 +22,17 @@ public class Leer {
         try {
             File file = new File("poema.txt");// declara fichero
             BufferedReader bufferedReader = new BufferedReader(new FileReader(file));
+            BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(file));
 
             String line;
             int i = 0;
             while ((line = bufferedReader.readLine()) != null){
                 i++;
                 if(i%2 == 0){
+                    //write
+                    bufferedWriter.write(line);
+                    bufferedWriter.newLine();
+                    //read
                     System.out.println(line);
                 }
             }

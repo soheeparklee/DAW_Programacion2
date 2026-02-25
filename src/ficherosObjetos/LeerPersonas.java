@@ -5,7 +5,7 @@ import java.io.*;
 public class LeerPersonas {
 	public static void main(String[] args) throws IOException, ClassNotFoundException {
 
-		File fichero = new File("FichPersonas.dat");
+		File fichero = new File("FichPersonas.obj");
 		ObjectInputStream dataIS = new ObjectInputStream(new FileInputStream(fichero));
 
 		try {
